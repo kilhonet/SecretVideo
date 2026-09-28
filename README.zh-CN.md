@@ -150,7 +150,7 @@ SecretVideo 是用于个人观看和保存你有权使用的视频的工具。�
 
 ## 更新
 
-SecretVideo **不会**自动更新。新版本经内部验证后手动发布，并在 [SecretVideo 页面](https://v2.kilho.net/secretvideo)公告。请参阅[更新政策说明](https://en.kilho.net/archives/notice/2940)。
+SecretVideo **不会**自动更新。新版本经内部验证后手动发布，并在 [SecretVideo 页面](https://kilho.net/secretvideo)公告。请参阅[更新政策说明](https://en.kilho.net/archives/notice/2940)。
 
 **版本历史**
 
@@ -169,7 +169,7 @@ SecretVideo 是**免费软件（Freeware）**。
 
 ## 链接
 
-- 网站：<https://v2.kilho.net/secretvideo>
+- 网站：<https://kilho.net/secretvideo>
 - 论坛：<https://groups.google.com/g/kilhonet>
 - X (Twitter)：<https://www.twitter.com/kilhonet>
 

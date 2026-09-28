@@ -148,7 +148,7 @@
 
 ## 업데이트
 
-시크릿비디오는 스스로 업데이트하지 **않습니다**. 새 버전은 내부 검증을 거쳐 수동으로 배포되며 [시크릿비디오 페이지](https://v2.kilho.net/secretvideo)에 공지됩니다. [업데이트 정책 안내](https://kilho.net/archives/notice/2940)를 참고하세요.
+시크릿비디오는 스스로 업데이트하지 **않습니다**. 새 버전은 내부 검증을 거쳐 수동으로 배포되며 [시크릿비디오 페이지](https://kilho.net/secretvideo)에 공지됩니다. [업데이트 정책 안내](https://kilho.net/archives/notice/2940)를 참고하세요.
 
 **버전 이력**
 
@@ -167,7 +167,7 @@
 
 ## 링크
 
-- 웹사이트: <https://v2.kilho.net/secretvideo>
+- 웹사이트: <https://kilho.net/secretvideo>
 - 포럼: <https://groups.google.com/g/kilhonet>
 - X (트위터): <https://www.twitter.com/kilhonet>
 

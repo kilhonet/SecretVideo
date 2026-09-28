@@ -150,7 +150,7 @@ The UI language follows the Windows display language (Korean → Korean, everyth
 
 ## Updates
 
-SecretVideo does **not** update itself. New versions are released manually after internal verification and announced on the [SecretVideo page](https://v2.kilho.net/secretvideo). See the [update policy notice](https://en.kilho.net/archives/notice/2940).
+SecretVideo does **not** update itself. New versions are released manually after internal verification and announced on the [SecretVideo page](https://kilho.net/secretvideo). See the [update policy notice](https://en.kilho.net/archives/notice/2940).
 
 **Version history**
 
@@ -169,7 +169,7 @@ You may use it anywhere — at home, at the office, in schools and government of
 
 ## Links
 
-- Website: <https://v2.kilho.net/secretvideo>
+- Website: <https://kilho.net/secretvideo>
 - Forum: <https://groups.google.com/g/kilhonet>
 - X (Twitter): <https://www.twitter.com/kilhonet>
 

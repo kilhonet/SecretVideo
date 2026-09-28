@@ -150,7 +150,7 @@ El idioma de la interfaz sigue al idioma de visualización de Windows (coreano �
 
 ## Actualizaciones
 
-SecretVideo **no** se actualiza solo. Las nuevas versiones se publican manualmente tras una verificación interna y se anuncian en la [página de SecretVideo](https://v2.kilho.net/secretvideo). Consulta el [aviso sobre la política de actualizaciones](https://en.kilho.net/archives/notice/2940).
+SecretVideo **no** se actualiza solo. Las nuevas versiones se publican manualmente tras una verificación interna y se anuncian en la [página de SecretVideo](https://kilho.net/secretvideo). Consulta el [aviso sobre la política de actualizaciones](https://en.kilho.net/archives/notice/2940).
 
 **Historial de versiones**
 
@@ -169,7 +169,7 @@ Puedes usarlo en cualquier lugar —en casa, en la oficina, en centros educativo
 
 ## Enlaces
 
-- Sitio web: <https://v2.kilho.net/secretvideo>
+- Sitio web: <https://kilho.net/secretvideo>
 - Foro: <https://groups.google.com/g/kilhonet>
 - X (Twitter): <https://www.twitter.com/kilhonet>
 

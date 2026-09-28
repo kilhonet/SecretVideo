@@ -150,7 +150,7 @@ SecretVideo は、利用する権利のある動画を個人的に視聴・保�
 
 ## 更新
 
-SecretVideo は自動更新を**行いません**。新しいバージョンは内部検証を経て手動で配布され、[SecretVideo ページ](https://v2.kilho.net/secretvideo)で告知されます。[更新ポリシーのお知らせ](https://en.kilho.net/archives/notice/2940)もご覧ください。
+SecretVideo は自動更新を**行いません**。新しいバージョンは内部検証を経て手動で配布され、[SecretVideo ページ](https://kilho.net/secretvideo)で告知されます。[更新ポリシーのお知らせ](https://en.kilho.net/archives/notice/2940)もご覧ください。
 
 **バージョン履歴**
 
@@ -169,7 +169,7 @@ SecretVideo は**フリーウェア**です。
 
 ## リンク
 
-- ウェブサイト: <https://v2.kilho.net/secretvideo>
+- ウェブサイト: <https://kilho.net/secretvideo>
 - フォーラム: <https://groups.google.com/g/kilhonet>
 - X (Twitter): <https://www.twitter.com/kilhonet>
 
