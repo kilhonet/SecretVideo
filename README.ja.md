@@ -170,7 +170,7 @@ SecretVideo は**フリーウェア**です。
 ## リンク
 
 - ウェブサイト: <https://kilho.net/secretvideo>
-- フォーラム: <https://groups.google.com/g/kilhonet>
+- フォーラム: <https://kilho.top/forum/qna>
 - X (Twitter): <https://www.twitter.com/kilhonet>
 
 © KILHO.NET

@@ -170,7 +170,7 @@ SecretVideo 是**免费软件（Freeware）**。
 ## 链接
 
 - 网站：<https://kilho.net/secretvideo>
-- 论坛：<https://groups.google.com/g/kilhonet>
+- 论坛：<https://kilho.top/forum/qna>
 - X (Twitter)：<https://www.twitter.com/kilhonet>
 
 © KILHO.NET

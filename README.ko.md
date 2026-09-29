@@ -168,7 +168,7 @@
 ## 링크
 
 - 웹사이트: <https://kilho.net/secretvideo>
-- 포럼: <https://groups.google.com/g/kilhonet>
+- 포럼: <https://kilho.top/forum/qna>
 - X (트위터): <https://www.twitter.com/kilhonet>
 
 © KILHO.NET

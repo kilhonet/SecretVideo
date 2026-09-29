@@ -170,7 +170,7 @@ Você pode usá-lo em qualquer lugar — em casa, no escritório, em escolas e e
 ## Links
 
 - Site: <https://kilho.net/secretvideo>
-- Fórum: <https://groups.google.com/g/kilhonet>
+- Fórum: <https://kilho.top/forum/qna>
 - X (Twitter): <https://www.twitter.com/kilhonet>
 
 © KILHO.NET
