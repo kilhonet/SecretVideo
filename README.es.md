@@ -47,7 +47,7 @@ SecretVideo puede usarse como aplicación portable: descomprime el ZIP donde qui
 
 ## Uso
 
-### Flujo básico
+### Primeros pasos
 
 1. Inicia SecretVideo. Aparece la **pantalla de inicio con sitios**. Haz clic en el que quieras.
 2. Navega por el sitio y reproduce un vídeo como en cualquier navegador.

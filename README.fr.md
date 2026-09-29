@@ -47,7 +47,7 @@ SecretVideo peut s'utiliser en version portable : décompressez le ZIP où vous 
 
 ## Utilisation
 
-### Le déroulement de base
+### Premiers pas
 
 1. Lancez SecretVideo. L'**écran d'accueil des sites** apparaît. Cliquez sur le site voulu.
 2. Parcourez le site et lisez une vidéo comme dans n'importe quel navigateur.

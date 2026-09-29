@@ -47,7 +47,7 @@ O SecretVideo pode ser usado como aplicativo portátil: descompacte em qualquer 
 
 ## Como usar
 
-### Fluxo básico
+### Primeiros passos
 
 1. Abra o SecretVideo. A **tela inicial de sites** aparece. Clique no site desejado.
 2. Navegue pelo site e reproduza um vídeo como em qualquer navegador.

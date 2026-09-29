@@ -47,7 +47,7 @@ SecretVideo can be used as a portable app: unzip anywhere and run `SecretVideo.e
 
 ## Usage
 
-### The basic flow
+### Getting started
 
 1. Start SecretVideo. The **site home screen** appears. Click the site you want.
 2. Browse the site and play a video as you would in any browser.
