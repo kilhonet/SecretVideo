@@ -6,7 +6,6 @@
 
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%20%2F%2011%20x64-0078D4)
 ![License](https://img.shields.io/badge/license-Freeware-brightgreen)
-![Version](https://img.shields.io/badge/version-1.3.2-blue)
 [![Download](https://img.shields.io/badge/download-kilho.net-orange)](https://down.kilho.net/secretvideo?lang=ko)
 
 ![시크릿비디오 화면](images/secretvideo-ko.webp)
