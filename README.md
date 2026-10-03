@@ -152,15 +152,6 @@ The UI language follows the Windows display language (Korean → Korean, everyth
 
 SecretVideo does **not** update itself. New versions are released manually after internal verification and announced on the [SecretVideo page](https://kilho.net/secretvideo). See the [update policy notice](https://en.kilho.net/archives/notice/2940).
 
-**Version history**
-
-| Version | Date | Notes |
-|---|---|---|
-| 1.3.2 | 2026-09-19 | Ad-blocking extension, Extensions menu, direct downloads from recommendation feeds, clip downloads, faster download list |
-| 1.3.1 | 2026-09-18 | Better saving on some sites, quality options (720p/1080p/best), PIP resizing fix |
-| 1.3.0 | 2026-09-16 | PIP mode, download list window, completion notifications, `Ctrl+P` full-page capture, window state memory |
-| 1.2.1 | 2026-09-07 | Fixed downloads for some Shorts links |
-
 ## License
 
 SecretVideo is **Freeware**.
