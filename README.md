@@ -18,7 +18,7 @@ SecretVideo is a browser-style player built for video sites. Pick a site from th
 
 When the video you are watching can be saved, a **Download button** appears next to the address bar. One click saves it in the format and quality you chose — original, MP4 or MP3. Sites that need a login work too: sign in once inside SecretVideo and your session is kept.
 
-Ad blocking is on by default, and `Ctrl+P` saves the whole page you are looking at as an image.
+Ad blocking is on by default, `Ctrl+P` saves the whole page you are looking at as an image, and `Ctrl+R` records what you are watching, with sound, as a video.
 
 ## Features
 
@@ -29,8 +29,10 @@ Ad blocking is on by default, and `Ctrl+P` saves the whole page you are looking 
 - **Download list window** — thumbnails and progress at a glance, with a Windows notification when a download finishes.
 - **Wide site support** — a widely used download engine (yt-dlp) is built in; for sites it does not know, SecretVideo finds the playing file itself and saves it.
 - **Stay signed in** — log in to a site inside SecretVideo and member-only videos can be watched and saved as well.
-- **Ad blocking** — uBlock Origin Lite is built in and can be turned on or off from the menu.
+- **Ad blocking** — uBlock Origin Lite is built in and can be turned on or off from the menu. It updates itself to the latest release.
 - **Full-page capture** — `Ctrl+P` saves the entire page, including everything below the fold, as a PNG.
+- **Screen recording** — the Record button or `Ctrl+R` records what you are watching as an MP4. Only SecretVideo's own sound is recorded.
+- **Settings window** — save options, quality, PIP, hardware acceleration, extensions and shortcuts in one window. Shortcuts can be changed to any key you like.
 - **Remembers your windows** — main window position/size/maximized state, PIP window position and size, download list position.
 
 ## Download / Installation
@@ -62,6 +64,7 @@ The default save folder is your PC's **Downloads** folder. Change it in the menu
 | ◀ ▶ | Back / Forward |
 | ⟳ / ✕ | Reload (Stop while a page is loading) |
 | Address bar | Type an address to go there, or type words to search |
+| ● / ■ | Record / Stop recording |
 | ↓ | Download button — appears only when a savable video is ready |
 | ⋮ | Menu |
 
@@ -93,6 +96,9 @@ SecretVideo notices which video is playing even when the page address does not c
 **Streaming sites such as CHZZK and Twitch**
 VODs and clips can be saved. **Live streams cannot be saved**, and the Download button does not appear for them.
 
+**Old Naver TV links and Naver clips**
+Naver TV videos have moved to Naver clips, but if you open an old Naver TV address or a link copied from Naver search, you can still save the video right from the clip viewer. When you scroll to the next video, the one you are currently watching is the one that gets saved.
+
 **Keep watching while you work (PIP)**
 Switch a video to **full screen** and SecretVideo automatically turns into a small always-on-top PIP window.
 - **Drag** the window to move it.
@@ -105,8 +111,14 @@ Switch a video to **full screen** and SecretVideo automatically turns into a sma
 **Keep a whole page as an image**
 Press `Ctrl+P`. The **entire page** — not just the visible part, but everything below the fold — is saved to the save folder as `SecretVideo-001.png` and a notification appears. Handy for keeping posts, comments or subtitle screens.
 
+**Keeping what you are watching as a video**
+Click the **Record** button (●) to the right of the address bar, or press `Ctrl+R`. Recording starts and the button turns into ■. Click it again to stop; the video is saved to the save folder with a name such as `SecretVideo-001.mp4` and a notification appears.
+- Only **sound coming from SecretVideo** is recorded. Music from other programs and Windows notification sounds are left out.
+- If you move the window while recording, the recording follows it. The recording size is the window size when you start, so set the size you want first.
+- If you close the program while recording, the video recorded so far is finished and saved.
+
 **Ads get in the way / a site misbehaves because of ad blocking**
-Ad blocking (uBlock Origin Lite) is on by default. If a particular site does not work properly, turn it off for a while under Menu → **Extensions**.
+Ad blocking (uBlock Origin Lite) is on by default. If a particular site does not work properly, turn it off for a while under Menu → **Extensions** (or **Settings → Extensions**). When a new release of the ad blocker comes out, it is replaced automatically the next time you start the program.
 
 **Managing downloaded files (Download list window)**
 Open it any time from Menu → **Download List**. Each row shows a thumbnail, title, source and status (Idle → Scan → Recv → Conv → Done), and the row background shows progress.
@@ -114,6 +126,7 @@ Open it any time from Menu → **Download List**. Each row shows a thumbnail, ti
 - **Delete key**: remove from the list
 - **Right-click**: Go to Source / Open Folder / View Log / Delete
 - Closing the window or pressing `ESC` only hides it; downloads continue.
+- Clicking the Download button on a video that is already downloaded or downloading opens this window and shows its status.
 
 **Downloading the same video twice**
 If a file with the same name exists, it is not overwritten; a number such as `(1)`, `(2)` is added.
@@ -121,15 +134,24 @@ If a file with the same name exists, it is not overwritten; a number such as `(1
 **Editing the site home screen**
 Use **Edit** on the home screen to add or remove sites, and **Reset** to restore the default list. Keeping only the sites you actually use makes starting faster.
 
+**Changing the shortcuts**
+Under Menu → **Settings → Shortcuts**, change **Screen capture** (default `Ctrl+P`) and **Start/stop recording** (default `Ctrl+R`). Click a field and it shows "Press a key…"; press the key you want and it is set right away.
+- `Backspace`: restore the default key for that action only
+- `Esc` or clicking the same field again: stop without changing
+- A key already used by another action is not taken; you see "Already used by '…'."
+
+**Drawing the screen without the graphics card**
+Set Menu → **Settings → General → Hardware acceleration** to **Off**, and the screen is drawn and videos are played by the CPU instead of the graphics card. The change takes effect after restarting the program.
+
 ### Copyright notice
 
-SecretVideo is a tool for watching and keeping videos you are entitled to use, for personal purposes. Please respect each site's terms of service and copyright.
+SecretVideo is a tool for watching and keeping (saving and recording) videos you are entitled to use, for personal purposes. Please respect each site's terms of service and copyright.
 
 ## Configuration
 
-There is no separate settings window; everything is changed from the menu (⋮) and saved automatically.
+Change everything in one window from Menu (⋮) → **Settings** (General, Extensions, Shortcuts). Frequently used items can also be changed directly from the menu. Changes apply immediately and are saved automatically.
 
-| Menu | What it sets | Default |
+| Item | What it sets | Default |
 |---|---|---|
 | Folder Settings / Open Folder | Where files are saved | Downloads folder |
 | Format Settings | Original / MP4 / MP3 | Original |
@@ -138,6 +160,9 @@ There is no separate settings window; everything is changed from the menu (⋮) 
 | Download List | Show or hide the list window | Opens automatically when a download starts |
 | Enable PIP when entering fullscreen | Turn full screen into a PIP window | On |
 | Extensions | Ad blocking on or off | On |
+| Hardware acceleration | On / Off (applies after restart) | On |
+| Shortcut — Screen capture | Save the whole page as an image | `Ctrl+P` |
+| Shortcut — Start/stop recording | Screen recording | `Ctrl+R` |
 
 The UI language follows the Windows display language (Korean → Korean, everything else → English).
 
@@ -146,10 +171,13 @@ The UI language follows the Windows display language (Korean → Korean, everyth
 - Windows 10 or Windows 11, **64-bit**
 - Microsoft Edge WebView2 Runtime (already present on Windows 11 and recent Windows 10; the installer adds it if missing)
 - An internet connection (first-launch component download, watching and saving videos)
+- Windows 10 version 2004 or later to record sound along with the video
 
 ## Updates
 
 SecretVideo does **not** update itself. New versions are released manually after internal verification and announced on the [SecretVideo page](https://kilho.net/secretvideo). See the [update policy notice](https://en.kilho.net/archives/notice/2940).
+
+The built-in ad blocker (uBlock Origin Lite) is the one exception: when a new release comes out, it is replaced with the latest release automatically the next time you start the program.
 
 ## License
 

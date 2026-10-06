@@ -18,7 +18,7 @@ SecretVideo est un lecteur de type navigateur conçu pour les sites de vidéos. 
 
 Lorsque la vidéo que vous regardez peut être enregistrée, un **bouton de téléchargement** apparaît à côté de la barre d'adresse. Un clic l'enregistre dans le format et la qualité choisis — original, MP4 ou MP3. Les sites nécessitant une connexion fonctionnent aussi : connectez-vous une fois dans SecretVideo et la session est conservée.
 
-Le blocage des publicités est activé par défaut, et `Ctrl+P` enregistre la page entière que vous consultez sous forme d'image.
+Le blocage des publicités est activé par défaut, `Ctrl+P` enregistre la page entière que vous consultez sous forme d'image, et `Ctrl+R` enregistre ce que vous regardez, avec le son, sous forme de vidéo.
 
 ## Fonctionnalités
 
@@ -29,8 +29,10 @@ Le blocage des publicités est activé par défaut, et `Ctrl+P` enregistre la pa
 - **Fenêtre de liste des téléchargements** — vignettes et progression en un coup d'œil, avec une notification Windows à la fin.
 - **Large prise en charge des sites** — un moteur de téléchargement très répandu (yt-dlp) est intégré ; pour les sites qu'il ne connaît pas, SecretVideo repère lui-même le fichier en cours de lecture et l'enregistre.
 - **Rester connecté** — connectez-vous à un site dans SecretVideo et les vidéos réservées aux membres peuvent aussi être regardées et enregistrées.
-- **Blocage des publicités** — uBlock Origin Lite est intégré et s'active ou se désactive depuis le menu.
+- **Blocage des publicités** — uBlock Origin Lite est intégré et s'active ou se désactive depuis le menu. Il se met à jour tout seul vers la dernière version.
 - **Capture de page entière** — `Ctrl+P` enregistre toute la page, y compris ce qui se trouve sous la ligne de flottaison, en PNG.
+- **Enregistrement de l'écran** — le bouton Enregistrer ou `Ctrl+R` enregistre ce que vous regardez en MP4. Seul le son de SecretVideo est enregistré.
+- **Fenêtre de paramètres** — options d'enregistrement, qualité, PIP, accélération matérielle, extensions et raccourcis dans une seule fenêtre. Les raccourcis peuvent être remplacés par la touche de votre choix.
 - **Mémorise vos fenêtres** — position/taille/état agrandi de la fenêtre principale, position et taille de la fenêtre PIP, position de la liste des téléchargements.
 
 ## Téléchargement / Installation
@@ -62,6 +64,7 @@ Le dossier de destination par défaut est le dossier **Téléchargements** de vo
 | ◀ ▶ | Précédent / Suivant |
 | ⟳ / ✕ | Recharger (Arrêter pendant le chargement d'une page) |
 | Barre d'adresse | Saisissez une adresse pour y aller, ou des mots pour lancer une recherche |
+| ● / ■ | Enregistrer / Arrêter l'enregistrement |
 | ↓ | Bouton de téléchargement — n'apparaît que lorsqu'une vidéo enregistrable est prête |
 | ⋮ | Menu |
 
@@ -93,6 +96,9 @@ SecretVideo repère la vidéo en cours de lecture même si l'adresse de la page 
 **Sites de streaming comme CHZZK et Twitch**
 Les rediffusions (VOD) et les clips peuvent être enregistrés. **Les directs ne peuvent pas être enregistrés**, et le bouton de téléchargement n'apparaît pas pour eux.
 
+**Anciens liens Naver TV et clips Naver**
+Les vidéos de Naver TV ont été transférées vers les clips Naver, mais si vous ouvrez une ancienne adresse Naver TV ou un lien copié depuis la recherche Naver, vous pouvez toujours enregistrer la vidéo directement depuis le lecteur de clips. En faisant défiler jusqu'à la vidéo suivante, c'est celle que vous regardez qui est enregistrée.
+
 **Continuer à regarder tout en travaillant (PIP)**
 Passez une vidéo en **plein écran** et SecretVideo se transforme automatiquement en une petite fenêtre PIP toujours au premier plan.
 - **Faites glisser** la fenêtre pour la déplacer.
@@ -105,8 +111,14 @@ Passez une vidéo en **plein écran** et SecretVideo se transforme automatiqueme
 **Conserver une page entière sous forme d'image**
 Appuyez sur `Ctrl+P`. **La page entière** — pas seulement la partie visible, mais tout ce qui se trouve en dessous — est enregistrée dans le dossier de destination sous un nom comme `SecretVideo-001.png`, et une notification apparaît. Pratique pour conserver des publications, des commentaires ou des écrans sous-titrés.
 
+**Garder ce que vous regardez sous forme de vidéo**
+Cliquez sur le bouton **Enregistrer** (●) à droite de la barre d'adresse, ou appuyez sur `Ctrl+R`. L'enregistrement démarre et le bouton devient ■. Cliquez à nouveau pour arrêter ; la vidéo est enregistrée dans le dossier de destination sous un nom comme `SecretVideo-001.mp4`, et une notification apparaît.
+- Seul le **son produit par SecretVideo** est enregistré. La musique d'autres programmes et les sons de notification de Windows sont exclus.
+- Si vous déplacez la fenêtre pendant l'enregistrement, celui-ci la suit. La taille de l'enregistrement est celle de la fenêtre au démarrage : réglez-la d'abord.
+- Si vous fermez le programme pendant l'enregistrement, la vidéo enregistrée jusque-là est finalisée et enregistrée.
+
 **Les publicités gênent / un site se comporte mal à cause du blocage**
-Le blocage des publicités (uBlock Origin Lite) est activé par défaut. Si un site précis ne fonctionne pas correctement, désactivez-le temporairement dans Menu → **Extensions**.
+Le blocage des publicités (uBlock Origin Lite) est activé par défaut. Si un site précis ne fonctionne pas correctement, désactivez-le temporairement dans Menu → **Extensions** (ou **Paramètres → Extensions**). Quand une nouvelle version du bloqueur sort, elle est remplacée automatiquement au prochain lancement.
 
 **Gérer les fichiers téléchargés (fenêtre Liste des téléchargements)**
 Ouvrez-la à tout moment via Menu → **Liste des téléchargements**. Chaque ligne affiche une vignette, le titre, la source et l'état (Inactif → Analyse → Réception → Conversion → Terminé), et le fond de la ligne indique la progression.
@@ -114,6 +126,7 @@ Ouvrez-la à tout moment via Menu → **Liste des téléchargements**. Chaque li
 - **Touche Suppr** : retirer de la liste
 - **Clic droit** : Aller à la source / Ouvrir le dossier / Voir le journal / Supprimer
 - Fermer la fenêtre ou appuyer sur `Échap` ne fait que la masquer ; les téléchargements continuent.
+- Cliquer sur le bouton de téléchargement d'une vidéo déjà téléchargée ou en cours ouvre cette fenêtre et affiche son état.
 
 **Télécharger deux fois la même vidéo**
 Si un fichier du même nom existe déjà, il n'est pas écrasé ; un numéro tel que `(1)`, `(2)` est ajouté.
@@ -121,15 +134,24 @@ Si un fichier du même nom existe déjà, il n'est pas écrasé ; un numéro tel
 **Modifier l'écran d'accueil des sites**
 Utilisez **Edit** sur l'écran d'accueil pour ajouter ou retirer des sites, et **Reset** pour rétablir la liste par défaut. Ne garder que les sites que vous utilisez vraiment rend le démarrage plus rapide.
 
+**Changer les raccourcis**
+Dans Menu → **Paramètres → Raccourcis**, changez **Capture d'écran** (par défaut `Ctrl+P`) et **Démarrer/arrêter l'enregistrement** (par défaut `Ctrl+R`). Cliquez sur un champ : « Appuyez sur une touche… » s'affiche ; appuyez sur la touche voulue et elle est attribuée aussitôt.
+- `Retour arrière` : rétablir la touche par défaut de cette action uniquement
+- `Échap` ou un nouveau clic sur le même champ : arrêter sans rien changer
+- Une touche déjà utilisée par une autre action n'est pas acceptée ; le message **Déjà utilisé par « … ».** s'affiche.
+
+**Dessiner l'écran sans la carte graphique**
+Réglez Menu → **Paramètres → Général → Accélération matérielle** sur **Désactivé** : l'écran est dessiné et les vidéos sont lues par le processeur au lieu de la carte graphique. La modification prendra effet au redémarrage du programme.
+
 ### Avertissement sur les droits d'auteur
 
-SecretVideo est un outil pour regarder et conserver, à titre personnel, des vidéos que vous êtes en droit d'utiliser. Respectez les conditions d'utilisation et les droits d'auteur de chaque site.
+SecretVideo est un outil pour regarder et conserver (télécharger et enregistrer), à titre personnel, des vidéos que vous êtes en droit d'utiliser. Respectez les conditions d'utilisation et les droits d'auteur de chaque site.
 
 ## Configuration
 
-Il n'y a pas de fenêtre de paramètres séparée ; tout se modifie depuis le menu (⋮) et s'enregistre automatiquement.
+Tout se modifie dans une seule fenêtre via Menu (⋮) → **Paramètres** (Général, Extensions, Raccourcis). Les éléments les plus utilisés se modifient aussi directement depuis le menu. Les changements s'appliquent immédiatement et s'enregistrent automatiquement.
 
-| Menu | Ce qu'il règle | Par défaut |
+| Élément | Ce qu'il règle | Par défaut |
 |---|---|---|
 | Paramètres du dossier / Ouvrir le dossier | Où les fichiers sont enregistrés | Dossier Téléchargements |
 | Paramètres du format | Original / MP4 / MP3 | Original |
@@ -138,6 +160,9 @@ Il n'y a pas de fenêtre de paramètres séparée ; tout se modifie depuis le me
 | Liste des téléchargements | Afficher ou masquer la fenêtre de liste | S'ouvre seule au démarrage d'un téléchargement |
 | Activer le PIP en passant en plein écran | Transformer le plein écran en fenêtre PIP | Activé |
 | Extensions | Blocage des publicités activé ou non | Activé |
+| Accélération matérielle | Activé / Désactivé (au redémarrage) | Activé |
+| Raccourci — Capture d'écran | Enregistrer la page entière comme image | `Ctrl+P` |
+| Raccourci — Démarrer/arrêter l'enregistrement | Enregistrement de l'écran | `Ctrl+R` |
 
 La langue de l'interface suit la langue d'affichage de Windows (coréen → coréen, toute autre → anglais).
 
@@ -146,10 +171,13 @@ La langue de l'interface suit la langue d'affichage de Windows (coréen → cor�
 - Windows 10 ou Windows 11, **64 bits**
 - Microsoft Edge WebView2 Runtime (déjà présent sur Windows 11 et les Windows 10 récents ; l'installateur l'ajoute s'il manque)
 - Une connexion Internet (téléchargement des composants au premier lancement, visionnage et enregistrement des vidéos)
+- Windows 10 version 2004 ou ultérieure pour enregistrer aussi le son
 
 ## Mises à jour
 
 SecretVideo **ne** se met **pas** à jour tout seul. Les nouvelles versions sont publiées manuellement après vérification interne et annoncées sur la [page SecretVideo](https://kilho.net/secretvideo). Consultez l'[avis sur la politique de mise à jour](https://en.kilho.net/archives/notice/2940).
+
+Seule exception : le bloqueur de publicités intégré (uBlock Origin Lite). Quand une nouvelle version sort, il est remplacé automatiquement par la plus récente au prochain lancement du programme.
 
 ## Licence
 

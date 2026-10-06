@@ -18,7 +18,7 @@ O SecretVideo é um player em estilo de navegador feito para sites de vídeo. Es
 
 Quando o vídeo que você está assistindo pode ser salvo, um **botão de download** aparece ao lado da barra de endereços. Um clique salva no formato e na qualidade que você escolheu — original, MP4 ou MP3. Sites que exigem login também funcionam: entre uma vez dentro do SecretVideo e a sessão é mantida.
 
-O bloqueio de anúncios vem ligado, e `Ctrl+P` salva a página inteira que você está vendo como imagem.
+O bloqueio de anúncios vem ligado, `Ctrl+P` salva a página inteira que você está vendo como imagem e `Ctrl+R` grava o que você está assistindo, com som, como vídeo.
 
 ## Recursos
 
@@ -29,8 +29,10 @@ O bloqueio de anúncios vem ligado, e `Ctrl+P` salva a página inteira que você
 - **Janela de lista de downloads** — miniaturas e progresso em um relance, com notificação do Windows ao concluir.
 - **Amplo suporte a sites** — traz embutido um mecanismo de download muito usado (yt-dlp); em sites que ele não conhece, o SecretVideo encontra sozinho o arquivo em reprodução e o salva.
 - **Continue logado** — faça login em um site dentro do SecretVideo e vídeos exclusivos para membros também podem ser assistidos e salvos.
-- **Bloqueio de anúncios** — o uBlock Origin Lite vem embutido e pode ser ligado ou desligado pelo menu.
+- **Bloqueio de anúncios** — o uBlock Origin Lite vem embutido e pode ser ligado ou desligado pelo menu. Ele se atualiza sozinho para a versão mais recente.
 - **Captura de página inteira** — `Ctrl+P` salva a página completa, incluindo tudo abaixo da dobra, como PNG.
+- **Gravação de tela** — o botão Gravar ou `Ctrl+R` grava o que você está assistindo em MP4. Só o som do próprio SecretVideo é gravado.
+- **Janela de configurações** — opções de salvamento, qualidade, PIP, aceleração de hardware, extensões e atalhos em uma única janela. Os atalhos podem ser trocados pela tecla que você quiser.
 - **Lembra suas janelas** — posição/tamanho/estado maximizado da janela principal, posição e tamanho da janela PIP, posição da lista de downloads.
 
 ## Download / Instalação
@@ -62,6 +64,7 @@ A pasta de destino padrão é a pasta **Downloads** do seu PC. Altere em menu (�
 | ◀ ▶ | Voltar / Avançar |
 | ⟳ / ✕ | Recarregar (Parar enquanto uma página carrega) |
 | Barra de endereços | Digite um endereço para ir até ele, ou palavras para pesquisar |
+| ● / ■ | Gravar / Parar gravação |
 | ↓ | Botão de download — aparece só quando há um vídeo pronto para salvar |
 | ⋮ | Menu |
 
@@ -93,6 +96,9 @@ O SecretVideo percebe qual vídeo está tocando mesmo quando o endereço da pág
 **Sites de streaming como CHZZK e Twitch**
 VODs e clipes podem ser salvos. **Transmissões ao vivo não podem ser salvas**, e o botão de download não aparece nelas.
 
+**Links antigos do Naver TV e clipes do Naver**
+Os vídeos do Naver TV foram transferidos para os clipes do Naver, mas, se você abrir um endereço antigo do Naver TV ou um link copiado da busca do Naver, ainda pode salvar o vídeo direto no visualizador de clipes. Ao rolar para o próximo vídeo, é salvo o que você está assistindo no momento.
+
 **Continuar assistindo enquanto trabalha (PIP)**
 Coloque um vídeo em **tela cheia** e o SecretVideo vira automaticamente uma pequena janela PIP sempre no topo.
 - **Arraste** a janela para movê-la.
@@ -105,8 +111,14 @@ Coloque um vídeo em **tela cheia** e o SecretVideo vira automaticamente uma peq
 **Guardar uma página inteira como imagem**
 Pressione `Ctrl+P`. A **página inteira** — não só a parte visível, mas tudo abaixo da dobra — é salva na pasta de destino como `SecretVideo-001.png` e uma notificação aparece. Útil para guardar postagens, comentários ou telas com legendas.
 
+**Guardar o que você está assistindo como vídeo**
+Clique no botão **Gravar** (●) à direita da barra de endereços ou pressione `Ctrl+R`. A gravação começa e o botão vira ■. Clique de novo para parar; o vídeo é salvo na pasta de destino com um nome como `SecretVideo-001.mp4` e uma notificação aparece.
+- Só o **som que sai do SecretVideo** é gravado. Músicas de outros programas e sons de notificação do Windows ficam de fora.
+- Se você mover a janela durante a gravação, a gravação acompanha. O tamanho da gravação é o da janela no início, então ajuste o tamanho antes de começar.
+- Se você fechar o programa durante a gravação, o vídeo gravado até ali é finalizado e salvo.
+
 **Anúncios atrapalham / um site falha por causa do bloqueio de anúncios**
-O bloqueio de anúncios (uBlock Origin Lite) vem ligado. Se um site específico não funcionar direito, desligue-o por um tempo em Menu → **Extensões**.
+O bloqueio de anúncios (uBlock Origin Lite) vem ligado. Se um site específico não funcionar direito, desligue-o por um tempo em Menu → **Extensões** (ou **Configurações → Extensões**). Quando sai uma nova versão do bloqueador, ela é trocada automaticamente na próxima vez que você abrir o programa.
 
 **Gerenciar arquivos baixados (janela Lista de downloads)**
 Abra a qualquer momento em Menu → **Lista de downloads**. Cada linha mostra miniatura, título, origem e status (Ocioso → Análise → Recebendo → Convertendo → Concluído), e o fundo da linha mostra o progresso.
@@ -114,6 +126,7 @@ Abra a qualquer momento em Menu → **Lista de downloads**. Cada linha mostra mi
 - **Tecla Delete**: remover da lista
 - **Botão direito**: Ir à origem / Abrir pasta / Ver log / Excluir
 - Fechar a janela ou pressionar `ESC` apenas a oculta; os downloads continuam.
+- Clicar no botão de download de um vídeo já baixado ou em download abre esta janela e mostra o status dele.
 
 **Baixar o mesmo vídeo duas vezes**
 Se já existir um arquivo com o mesmo nome, ele não é sobrescrito; um número como `(1)`, `(2)` é adicionado.
@@ -121,15 +134,24 @@ Se já existir um arquivo com o mesmo nome, ele não é sobrescrito; um número 
 **Editar a tela inicial de sites**
 Use **Edit** na tela inicial para adicionar ou remover sites, e **Reset** para restaurar a lista padrão. Manter só os sites que você realmente usa deixa o início mais rápido.
 
+**Trocar os atalhos**
+Em Menu → **Configurações → Atalhos**, troque **Captura de tela** (padrão `Ctrl+P`) e **Iniciar/parar gravação** (padrão `Ctrl+R`). Clique em um campo e aparece "Pressione uma tecla…"; pressione a tecla desejada e ela é definida na hora.
+- `Backspace`: voltar à tecla padrão só dessa ação
+- `Esc` ou clicar de novo no mesmo campo: sair sem alterar
+- Uma tecla já usada por outra ação não é aceita; aparece o aviso **Já usada por '…'.**
+
+**Desenhar a tela sem a placa de vídeo**
+Em Menu → **Configurações → Geral → Aceleração de hardware**, escolha **Desligado**: a tela é desenhada e os vídeos são reproduzidos pela CPU em vez da placa de vídeo. A mudança vale depois de reiniciar o programa.
+
 ### Aviso sobre direitos autorais
 
-O SecretVideo é uma ferramenta para assistir e guardar, para uso pessoal, vídeos que você tem o direito de usar. Respeite os termos de serviço e os direitos autorais de cada site.
+O SecretVideo é uma ferramenta para assistir e guardar (salvar e gravar), para uso pessoal, vídeos que você tem o direito de usar. Respeite os termos de serviço e os direitos autorais de cada site.
 
 ## Configuração
 
-Não há uma janela de configurações separada; tudo é alterado pelo menu (⋮) e salvo automaticamente.
+Tudo é alterado em uma única janela em Menu (⋮) → **Configurações** (Geral, Extensões, Atalhos). Os itens mais usados também podem ser alterados direto pelo menu. As mudanças valem na hora e são salvas automaticamente.
 
-| Menu | O que define | Padrão |
+| Item | O que define | Padrão |
 |---|---|---|
 | Configurações de pasta / Abrir pasta | Onde os arquivos são salvos | Pasta Downloads |
 | Configurações de formato | Original / MP4 / MP3 | Original |
@@ -138,6 +160,9 @@ Não há uma janela de configurações separada; tudo é alterado pelo menu (⋮
 | Lista de downloads | Mostrar ou ocultar a janela da lista | Abre sozinha ao iniciar um download |
 | Ativar PIP ao entrar em tela cheia | Transformar a tela cheia em janela PIP | Ligado |
 | Extensões | Bloqueio de anúncios ligado ou desligado | Ligado |
+| Aceleração de hardware | Ligado / Desligado (vale após reiniciar) | Ligado |
+| Atalho — Captura de tela | Salvar a página inteira como imagem | `Ctrl+P` |
+| Atalho — Iniciar/parar gravação | Gravação de tela | `Ctrl+R` |
 
 O idioma da interface segue o idioma de exibição do Windows (coreano → coreano, qualquer outro → inglês).
 
@@ -146,10 +171,13 @@ O idioma da interface segue o idioma de exibição do Windows (coreano → corea
 - Windows 10 ou Windows 11, **64 bits**
 - Microsoft Edge WebView2 Runtime (já presente no Windows 11 e no Windows 10 recente; o instalador o adiciona se estiver faltando)
 - Conexão com a Internet (download de componentes na primeira execução, assistir e salvar vídeos)
+- Windows 10 versão 2004 ou posterior para gravar também o som
 
 ## Atualizações
 
 O SecretVideo **não** se atualiza sozinho. Novas versões são publicadas manualmente após verificação interna e anunciadas na [página do SecretVideo](https://kilho.net/secretvideo). Veja o [aviso sobre a política de atualizações](https://en.kilho.net/archives/notice/2940).
+
+A única exceção é o bloqueador de anúncios embutido (uBlock Origin Lite): quando sai uma nova versão, ele é trocado automaticamente pela mais recente na próxima vez que você abrir o programa.
 
 ## Licença
 
