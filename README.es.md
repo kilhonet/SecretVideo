@@ -164,7 +164,7 @@ Todo se cambia en una sola ventana desde Menú (⋮) → **Configuración** (Gen
 | Atajo — Captura de pantalla | Guardar la página completa como imagen | `Ctrl+P` |
 | Atajo — Iniciar/detener grabación | Grabación de pantalla | `Ctrl+R` |
 
-El idioma de la interfaz sigue al idioma de visualización de Windows (coreano → coreano, cualquier otro → inglés).
+El idioma de la interfaz sigue el formato regional de Windows (coreano, inglés, japonés, chino, ruso, italiano, francés o español; cualquier otro → inglés).
 
 ## Requisitos
 

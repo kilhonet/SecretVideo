@@ -164,7 +164,7 @@ Tudo é alterado em uma única janela em Menu (⋮) → **Configurações** (Ger
 | Atalho — Captura de tela | Salvar a página inteira como imagem | `Ctrl+P` |
 | Atalho — Iniciar/parar gravação | Gravação de tela | `Ctrl+R` |
 
-O idioma da interface segue o idioma de exibição do Windows (coreano → coreano, qualquer outro → inglês).
+O idioma da interface segue o formato regional do Windows (coreano, inglês, japonês, chinês, russo, italiano, francês ou espanhol; qualquer outro → inglês).
 
 ## Requisitos
 

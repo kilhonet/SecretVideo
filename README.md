@@ -164,7 +164,7 @@ Change everything in one window from Menu (⋮) → **Settings** (General, Exten
 | Shortcut — Screen capture | Save the whole page as an image | `Ctrl+P` |
 | Shortcut — Start/stop recording | Screen recording | `Ctrl+R` |
 
-The UI language follows the Windows display language (Korean → Korean, everything else → English).
+The UI language follows the Windows regional format (Korean, English, Japanese, Chinese, Russian, Italian, French or Spanish; everything else → English).
 
 ## Requirements
 

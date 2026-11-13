@@ -164,7 +164,7 @@ Tout se modifie dans une seule fenêtre via Menu (⋮) → **Paramètres** (Gén
 | Raccourci — Capture d'écran | Enregistrer la page entière comme image | `Ctrl+P` |
 | Raccourci — Démarrer/arrêter l'enregistrement | Enregistrement de l'écran | `Ctrl+R` |
 
-La langue de l'interface suit la langue d'affichage de Windows (coréen → coréen, toute autre → anglais).
+La langue de l'interface suit le format régional de Windows (coréen, anglais, japonais, chinois, russe, italien, français ou espagnol ; toute autre → anglais).
 
 ## Configuration requise
 
